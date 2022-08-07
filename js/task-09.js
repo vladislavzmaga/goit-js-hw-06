@@ -4,7 +4,8 @@ const parEl = document.querySelector(".color");
 buttonEl.addEventListener("click", getColodBody);
 
 function getColodBody() {
-  document.body.style.backgroundColor = getRandomHexColor();
+  const backgroundColor = getRandomHexColor();
+  document.body.style.backgroundColor = backgroundColor;
   parEl.textContent = getRandomHexColor();
 }
 
